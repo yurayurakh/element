@@ -181,7 +181,7 @@
       },
 
       readonly() {
-        return !this.filterable || this.multiple || (!isIE() && !isEdge() && !this.visible);
+	    return !this.filterable || this.multiple || !isIE && !this.visible && !this.remote;
       },
 
       showClose() {
